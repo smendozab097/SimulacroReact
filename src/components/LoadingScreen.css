@@ -1,0 +1,151 @@
+/* Contenedor de la pantalla completa */
+.loading-screen-container {
+  position: fixed;
+  inset: 0;
+  background-color: #f8fafc; /* bg-slate-50 para combinar con la página */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  z-index: 9999;
+}
+
+/* --- CUBO 3D (young-dragon-29 style) --- */
+.spinner-cube {
+  width: 50px;
+  height: 50px;
+  animation: spinner-rotate-cube 2s infinite ease;
+  transform-style: preserve-3d;
+}
+
+.spinner-cube > div {
+  background-color: rgba(37, 99, 235, 0.08); /* Azul translúcido */
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid #2563eb; /* Borde azul brillante */
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.15);
+  border-radius: 8px;
+}
+
+/* Posicionamiento en 3D de cada cara del cubo */
+.spinner-cube div:nth-of-type(1) {
+  transform: translateZ(-25px) rotateY(180deg);
+}
+
+.spinner-cube div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner-cube div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner-cube div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner-cube div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner-cube div:nth-of-type(6) {
+  transform: translateZ(25px);
+}
+
+@keyframes spinner-rotate-cube {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+/* --- TEXT CAROUSEL (fresh-lizard-20 style) --- */
+.words-container {
+  display: flex;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #64748b; /* slate-500 */
+  height: 40px;
+  padding: 0 10px;
+  box-sizing: content-box;
+}
+
+.words-wrapper {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+/* Gradiente superior/inferior para desvanecer las palabras al entrar y salir */
+.words-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    #f8fafc 5%,
+    transparent 35%,
+    transparent 65%,
+    #f8fafc 95%
+  );
+  z-index: 20;
+  pointer-events: none;
+}
+
+.words-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  animation: words-spin-animation 8s infinite;
+}
+
+.word-item {
+  display: block;
+  height: 100%;
+  padding-left: 8px;
+  color: #4f46e5; /* indigo-600 */
+  white-space: nowrap;
+}
+
+/* Animación con efecto rebote/muelle */
+@keyframes words-spin-animation {
+  0%, 15% {
+    transform: translateY(0);
+  }
+  20%, 35% {
+    transform: translateY(-102%);
+  }
+  38% {
+    transform: translateY(-100%);
+  }
+  40%, 55% {
+    transform: translateY(-202%);
+  }
+  58% {
+    transform: translateY(-200%);
+  }
+  60%, 75% {
+    transform: translateY(-302%);
+  }
+  78% {
+    transform: translateY(-300%);
+  }
+  80%, 95% {
+    transform: translateY(-402%);
+  }
+  98%, 100% {
+    transform: translateY(-400%);
+  }
+}

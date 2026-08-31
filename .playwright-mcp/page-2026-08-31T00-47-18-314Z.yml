@@ -1,0 +1,286 @@
+- generic [active] [ref=e1]:
+  - progressbar [ref=e2]
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /
+      - button [ref=e7] [cursor=pointer]
+    - main [ref=e12]:
+      - generic [ref=e13]:
+        - button "Go back" [ref=e15] [cursor=pointer]
+        - generic [ref=e18]:
+          - heading [level=1] [ref=e19]:
+            - text: Loader by
+            - link "AQ AqFox" [ref=e20] [cursor=pointer]:
+              - /url: /profile/AqFox
+              - generic [ref=e21]: AQ
+              - text: AqFox
+          - generic [ref=e23]:
+            - generic [ref=e24]: 49K
+            - generic [ref=e27]: "0"
+      - generic [ref=e30]:
+        - generic [ref=e42]:
+          - generic [ref=e43]: "#e8e8e8"
+          - generic [ref=e44] [cursor=pointer]:
+            - checkbox [checked]
+          - generic [ref=e50] [cursor=pointer]:
+            - textbox: "#e8e8e8"
+        - generic [ref=e51]:
+          - tablist [ref=e54]:
+            - tab "HTML" [ref=e55] [cursor=pointer]
+            - tab "CSS" [selected] [ref=e59] [cursor=pointer]
+          - generic [ref=e63]:
+            - button "Copy" [ref=e64] [cursor=pointer]
+            - generic [ref=e68]:
+              - generic:
+                - generic: "1"
+                - text: ".spinner {"
+                - generic: "2"
+                - text: "width: 44px;"
+                - generic: "3"
+                - text: "height: 44px;"
+                - generic: "4"
+                - text: "animation: spinner-y0fdc1 2s infinite ease;"
+                - generic: "5"
+                - text: "transform-style: preserve-3d;"
+                - generic: "6"
+                - text: "}"
+                - generic: "7"
+                - generic: "8"
+                - text: ".spinner > div {"
+                - generic: "9"
+                - text: "background-color: rgba(0,77,255,0.2);"
+                - generic: "10"
+                - text: "height: 100%;"
+                - generic: "11"
+                - text: "position: absolute;"
+                - generic: "12"
+                - text: "width: 100%;"
+                - generic: "13"
+                - text: "border: 2px solid #004dff;"
+                - generic: "14"
+                - text: "}"
+                - generic: "15"
+                - generic: "16"
+                - text: ".spinner div:nth-of-type(1) {"
+                - generic: "17"
+                - text: "transform: translateZ(-22px) rotateY(180deg);"
+                - generic: "18"
+                - text: "}"
+                - generic: "19"
+                - generic: "20"
+                - text: ".spinner div:nth-of-type(2) {"
+                - generic: "21"
+                - text: "transform: rotateY(-270deg) translateX(50%);"
+                - generic: "22"
+                - text: "transform-origin: top right;"
+                - generic: "23"
+                - text: "}"
+                - generic: "24"
+                - generic: "25"
+                - text: ".spinner div:nth-of-type(3) {"
+                - generic: "26"
+                - text: "transform: rotateY(270deg) translateX(-50%);"
+                - generic: "27"
+                - text: "transform-origin: center left;"
+                - generic: "28"
+                - text: "}"
+                - generic: "29"
+                - generic: "30"
+                - text: ".spinner div:nth-of-type(4) {"
+                - generic: "31"
+                - text: "transform: rotateX(90deg) translateY(-50%);"
+                - generic: "32"
+                - text: "transform-origin: top center;"
+                - generic: "33"
+                - text: "}"
+                - generic: "34"
+                - generic: "35"
+                - text: ".spinner div:nth-of-type(5) {"
+                - generic: "36"
+                - text: "transform: rotateX(-90deg) translateY(50%);"
+                - generic: "37"
+                - text: "transform-origin: bottom center;"
+                - generic: "38"
+                - text: "}"
+                - generic: "39"
+                - generic: "40"
+                - text: ".spinner div:nth-of-type(6) {"
+                - generic: "41"
+                - text: "transform: translateZ(22px);"
+                - generic: "42"
+                - text: "}"
+                - generic: "43"
+                - generic: "44"
+                - generic: "@keyframes spinner-y0fdc1"
+                - text: "{"
+                - generic: "45"
+                - text: "0% {"
+                - generic: "46"
+                - text: "transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);"
+                - generic: "47"
+                - text: "}"
+                - generic: "48"
+                - generic: "49"
+                - text: "50% {"
+                - generic: "50"
+                - text: "transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);"
+                - generic: "51"
+                - text: "}"
+                - generic: "52"
+                - generic: "53"
+                - text: "100% {"
+                - generic: "54"
+                - text: "transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);"
+                - generic: "55"
+                - text: "}"
+                - generic: "56"
+                - text: "}"
+              - textbox [ref=e69]: ".spinner { width: 44px; height: 44px; animation: spinner-y0fdc1 2s infinite ease; transform-style: preserve-3d; } .spinner > div { background-color: rgba(0,77,255,0.2); height: 100%; position: absolute; width: 100%; border: 2px solid #004dff; } .spinner div:nth-of-type(1) { transform: translateZ(-22px) rotateY(180deg); } .spinner div:nth-of-type(2) { transform: rotateY(-270deg) translateX(50%); transform-origin: top right; } .spinner div:nth-of-type(3) { transform: rotateY(270deg) translateX(-50%); transform-origin: center left; } .spinner div:nth-of-type(4) { transform: rotateX(90deg) translateY(-50%); transform-origin: top center; } .spinner div:nth-of-type(5) { transform: rotateX(-90deg) translateY(50%); transform-origin: bottom center; } .spinner div:nth-of-type(6) { transform: translateZ(22px); } @keyframes spinner-y0fdc1 { 0% { transform: rotate(45deg) rotateX(-25deg) rotateY(25deg); } 50% { transform: rotate(45deg) rotateX(-385deg) rotateY(25deg); } 100% { transform: rotate(45deg) rotateX(-385deg) rotateY(385deg); } }"
+      - generic [ref=e76]:
+        - button "Save to favorites" [ref=e78] [cursor=pointer]
+        - link "Copy to Figma" [ref=e85] [cursor=pointer]:
+          - /url: /AqFox/young-dragon-29?create-account
+        - generic [ref=e93]:
+          - button "Export" [ref=e94] [cursor=pointer]
+          - button "React" [ref=e100] [cursor=pointer]
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - generic [ref=e107]:
+            - generic [ref=e108]:
+              - heading "Comments" [level=3] [ref=e109]
+              - paragraph [ref=e110]:
+                - link "Log in" [ref=e111] [cursor=pointer]:
+                  - /url: /AqFox/young-dragon-29?create-account
+                - text: to add comments
+            - generic [ref=e113]:
+              - textbox "Send a first comment..." [disabled] [ref=e114]
+              - generic [ref=e115]:
+                - button "Send" [disabled]
+                - paragraph: 0/244
+          - link "No variations yet, create one!" [ref=e118] [cursor=pointer]:
+            - /url: /AqFox/young-dragon-29?create-account
+        - complementary [ref=e122]:
+          - generic [ref=e123]:
+            - heading "loader" [level=2] [ref=e124]
+            - generic [ref=e125]:
+              - link "3d" [ref=e126] [cursor=pointer]:
+                - /url: /tags/3d
+              - link "loader" [ref=e127] [cursor=pointer]:
+                - /url: /tags/loader
+              - link "cube" [ref=e128] [cursor=pointer]:
+                - /url: /tags/cube
+              - link "animated" [ref=e129] [cursor=pointer]:
+                - /url: /tags/animated
+              - link "loader" [ref=e130] [cursor=pointer]:
+                - /url: /tags/loader
+              - link "square" [ref=e131] [cursor=pointer]:
+                - /url: /tags/square
+              - link "blue" [ref=e132] [cursor=pointer]:
+                - /url: /tags/blue
+              - link "minimalistic" [ref=e133] [cursor=pointer]:
+                - /url: /tags/minimalistic
+              - link "outline" [ref=e134] [cursor=pointer]:
+                - /url: /tags/outline
+              - link "spinning" [ref=e135] [cursor=pointer]:
+                - /url: /tags/spinning
+              - link "geometric" [ref=e136] [cursor=pointer]:
+                - /url: /tags/geometric
+              - link "diamond" [ref=e137] [cursor=pointer]:
+                - /url: /tags/diamond
+            - generic [ref=e138]:
+              - generic [ref=e139]: Apr 19, 2022
+              - button "Report" [ref=e142] [cursor=pointer]
+          - generic [ref=e148]:
+            - link "AQ" [ref=e149] [cursor=pointer]:
+              - /url: /profile/AqFox
+            - generic [ref=e152]:
+              - link "AqFox" [ref=e153] [cursor=pointer]:
+                - /url: /profile/AqFox
+              - paragraph [ref=e154]: Aquilix
+            - paragraph [ref=e155]: Plugin developer Data Pack Developer Web developer - HTML - CSS - SCSS - JavaScript | Python Developer - Knows some Java - Fox.
+        - generic [ref=e159]:
+          - generic [ref=e160]: MIT License
+          - textbox [ref=e164]: "Copyright - 2026 AqFox (Aquilix) Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    - contentinfo "Site Footer" [ref=e165]:
+      - generic [ref=e166]:
+        - generic [ref=e167]:
+          - generic [ref=e168]:
+            - paragraph [ref=e170]: Uiverse | The universe of UI
+            - generic [ref=e171]:
+              - paragraph [ref=e172]: MIT License
+              - paragraph [ref=e175]:
+                - text: All content (UI elements) on this site are published under the
+                - link "MIT License" [ref=e176] [cursor=pointer]:
+                  - /url: https://opensource.org/license/mit
+                - text: .
+            - list [ref=e177]:
+              - listitem [ref=e178]:
+                - link "Instagram" [ref=e179] [cursor=pointer]:
+                  - /url: https://www.instagram.com/uiverse.io/
+              - listitem [ref=e183]:
+                - link "Twitter" [ref=e184] [cursor=pointer]:
+                  - /url: https://twitter.com/uiverse_io
+              - listitem [ref=e188]:
+                - link "Discord" [ref=e189] [cursor=pointer]:
+                  - /url: https://discord.gg/KD8ba2uUpT
+          - generic [ref=e193]:
+            - generic [ref=e194]:
+              - paragraph [ref=e195]: Games
+              - navigation "Footer Navigation - Legal" [ref=e196]:
+                - list [ref=e197]:
+                  - listitem [ref=e198]:
+                    - link "Azeron.ai" [ref=e199] [cursor=pointer]:
+                      - /url: https://azeron.ai
+                  - listitem [ref=e200]:
+                    - link "Tavernia.io" [ref=e201] [cursor=pointer]:
+                      - /url: https://tavernia.io
+            - generic [ref=e202]:
+              - paragraph [ref=e203]: Resources
+              - navigation "Footer Navigation - Legal" [ref=e204]:
+                - list [ref=e205]:
+                  - listitem [ref=e206]:
+                    - link "Design Systems" [ref=e207] [cursor=pointer]:
+                      - /url: https://uiverse.io/design
+                  - listitem [ref=e208]:
+                    - link "Cssbuttons.io" [ref=e209] [cursor=pointer]:
+                      - /url: https://cssbuttons.io
+                  - listitem [ref=e210]:
+                    - link "Neumorphism.io" [ref=e211] [cursor=pointer]:
+                      - /url: https://neumorphism.io
+                  - listitem [ref=e212]:
+                    - link "Browsergames.gg" [ref=e213] [cursor=pointer]:
+                      - /url: https://browsergames.gg
+            - generic [ref=e214]:
+              - paragraph [ref=e215]: Information
+              - navigation "Footer Navigation - Legal" [ref=e216]:
+                - list [ref=e217]:
+                  - listitem [ref=e218]:
+                    - link "Blog" [ref=e219] [cursor=pointer]:
+                      - /url: /blog
+                  - listitem [ref=e220]:
+                    - link "Post Guidelines" [ref=e221] [cursor=pointer]:
+                      - /url: /guidelines
+                  - listitem [ref=e222]:
+                    - link "Give feedback" [ref=e223] [cursor=pointer]:
+                      - /url: /feedback
+                  - listitem [ref=e224]:
+                    - link "Report bug" [ref=e225] [cursor=pointer]:
+                      - /url: /bug
+            - generic [ref=e226]:
+              - paragraph [ref=e227]: Legal
+              - navigation "Footer Navigation - Company" [ref=e228]:
+                - list [ref=e229]:
+                  - listitem [ref=e230]:
+                    - link "Terms and Conditions" [ref=e231] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/terms-of-service/bdc0e7cf-cb88-4f24-9cb5-13761e20dedb
+                  - listitem [ref=e232]:
+                    - link "Privacy policy" [ref=e233] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/privacy-policy/fe317b39-7972-4f85-b7c6-d4f562e429d4
+                  - listitem [ref=e234]:
+                    - link "Cookie policy" [ref=e235] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/cookie-policy/4e4bbc89-b80d-43d6-98bc-02ee075cc311
+                  - listitem [ref=e236]:
+                    - link "Disclaimer" [ref=e237] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/disclaimer/eabc96f8-640d-4858-aadc-c30f646265ed
+        - paragraph [ref=e238]: 2026 Pixel Galaxies. All rights reserved. - Uiverse.io

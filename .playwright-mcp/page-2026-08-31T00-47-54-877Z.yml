@@ -1,0 +1,353 @@
+- generic [active] [ref=f369e1]:
+  - progressbar [ref=f369e2]
+  - generic [ref=f369e3]:
+    - banner [ref=f369e4]:
+      - link [ref=f369e5] [cursor=pointer]:
+        - /url: /
+      - button [ref=f369e7] [cursor=pointer]
+    - main [ref=f369e12]:
+      - generic [ref=f369e13]:
+        - button "Go back" [ref=f369e15] [cursor=pointer]
+        - generic [ref=f369e18]:
+          - heading [level=1] [ref=f369e19]:
+            - text: Loader by
+            - link [ref=f369e20] [cursor=pointer]:
+              - /url: /profile/kennyotsu
+              - img "kennyotsu" [ref=f369e22]
+              - text: kennyotsu
+          - generic [ref=f369e23]:
+            - generic [ref=f369e24]: 100K
+            - generic [ref=f369e27]: "0"
+      - generic [ref=f369e30]:
+        - generic [ref=f369e32]:
+          - generic [ref=f369e36]:
+            - paragraph [ref=f369e37]: loading
+            - generic [ref=f369e38]:
+              - generic [ref=f369e39]: buttons
+              - generic [ref=f369e40]: forms
+              - generic [ref=f369e41]: switches
+              - generic [ref=f369e42]: cards
+              - generic [ref=f369e43]: buttons
+          - generic [ref=f369e44]:
+            - generic [ref=f369e45]: "#111111"
+            - generic [ref=f369e46] [cursor=pointer]:
+              - checkbox
+            - generic [ref=f369e52] [cursor=pointer]:
+              - textbox: "#111111"
+        - generic [ref=f369e53]:
+          - tablist [ref=f369e56]:
+            - tab "HTML" [ref=f369e57] [cursor=pointer]
+            - tab "CSS" [selected] [ref=f369e61] [cursor=pointer]
+          - generic [ref=f369e65]:
+            - button "Copy" [ref=f369e66] [cursor=pointer]
+            - generic [ref=f369e70]:
+              - generic:
+                - generic: "1"
+                - text: ".card {"
+                - generic: "2"
+                - text: /* color used to softly clip top and bottom of the .words container */
+                - generic: "3"
+                - text: "--bg-color: #111;"
+                - generic: "4"
+                - text: "background-color: var(--bg-color);"
+                - generic: "5"
+                - text: "padding: 1rem 2rem;"
+                - generic: "6"
+                - text: "border-radius: 1.25rem;"
+                - generic: "7"
+                - text: "}"
+                - generic: "8"
+                - text: ".loader {"
+                - generic: "9"
+                - text: "color: rgb(124, 124, 124);"
+                - generic: "10"
+                - text: "font-family: \"Poppins\", sans-serif;"
+                - generic: "11"
+                - text: "font-weight: 500;"
+                - generic: "12"
+                - text: "font-size: 25px;"
+                - generic: "13"
+                - text: "-webkit-box-sizing: content-box;"
+                - generic: "14"
+                - text: "box-sizing: content-box;"
+                - generic: "15"
+                - text: "height: 40px;"
+                - generic: "16"
+                - text: "padding: 10px 10px;"
+                - generic: "17"
+                - text: "display: -webkit-box;"
+                - generic: "18"
+                - text: "display: -ms-flexbox;"
+                - generic: "19"
+                - text: "display: flex;"
+                - generic: "20"
+                - text: "border-radius: 8px;"
+                - generic: "21"
+                - text: "}"
+                - generic: "22"
+                - generic: "23"
+                - text: ".words {"
+                - generic: "24"
+                - text: "overflow: hidden;"
+                - generic: "25"
+                - text: "position: relative;"
+                - generic: "26"
+                - text: "}"
+                - generic: "27"
+                - text: ".words::after {"
+                - generic: "28"
+                - text: "content: \"\";"
+                - generic: "29"
+                - text: "position: absolute;"
+                - generic: "30"
+                - text: "inset: 0;"
+                - generic: "31"
+                - text: "background: linear-gradient("
+                - generic: "32"
+                - text: var(--bg-color) 10%,
+                - generic: "33"
+                - text: transparent 30%,
+                - generic: "34"
+                - text: transparent 70%,
+                - generic: "35"
+                - text: var(--bg-color) 90%
+                - generic: "36"
+                - text: );
+                - generic: "37"
+                - text: "z-index: 20;"
+                - generic: "38"
+                - text: "}"
+                - generic: "39"
+                - generic: "40"
+                - text: ".word {"
+                - generic: "41"
+                - text: "display: block;"
+                - generic: "42"
+                - text: "height: 100%;"
+                - generic: "43"
+                - text: "padding-left: 6px;"
+                - generic: "44"
+                - text: "color: #956afa;"
+                - generic: "45"
+                - text: "animation: spin_4991 4s infinite;"
+                - generic: "46"
+                - text: "}"
+                - generic: "47"
+                - generic: "48"
+                - generic: "@keyframes spin_4991"
+                - text: "{"
+                - generic: "49"
+                - text: "10% {"
+                - generic: "50"
+                - text: "-webkit-transform: translateY(-102%);"
+                - generic: "51"
+                - text: "transform: translateY(-102%);"
+                - generic: "52"
+                - text: "}"
+                - generic: "53"
+                - generic: "54"
+                - text: "25% {"
+                - generic: "55"
+                - text: "-webkit-transform: translateY(-100%);"
+                - generic: "56"
+                - text: "transform: translateY(-100%);"
+                - generic: "57"
+                - text: "}"
+                - generic: "58"
+                - generic: "59"
+                - text: "35% {"
+                - generic: "60"
+                - text: "-webkit-transform: translateY(-202%);"
+                - generic: "61"
+                - text: "transform: translateY(-202%);"
+                - generic: "62"
+                - text: "}"
+                - generic: "63"
+                - generic: "64"
+                - text: "50% {"
+                - generic: "65"
+                - text: "-webkit-transform: translateY(-200%);"
+                - generic: "66"
+                - text: "transform: translateY(-200%);"
+                - generic: "67"
+                - text: "}"
+                - generic: "68"
+                - generic: "69"
+                - text: "60% {"
+                - generic: "70"
+                - text: "-webkit-transform: translateY(-302%);"
+                - generic: "71"
+                - text: "transform: translateY(-302%);"
+                - generic: "72"
+                - text: "}"
+                - generic: "73"
+                - generic: "74"
+                - text: "75% {"
+                - generic: "75"
+                - text: "-webkit-transform: translateY(-300%);"
+                - generic: "76"
+                - text: "transform: translateY(-300%);"
+                - generic: "77"
+                - text: "}"
+                - generic: "78"
+                - generic: "79"
+                - text: "85% {"
+                - generic: "80"
+                - text: "-webkit-transform: translateY(-402%);"
+                - generic: "81"
+                - text: "transform: translateY(-402%);"
+                - generic: "82"
+                - text: "}"
+                - generic: "83"
+                - generic: "84"
+                - text: "100% {"
+                - generic: "85"
+                - text: "-webkit-transform: translateY(-400%);"
+                - generic: "86"
+                - text: "transform: translateY(-400%);"
+                - generic: "87"
+                - text: "}"
+                - generic: "88"
+                - text: "}"
+                - generic: "89"
+              - textbox [ref=f369e71]: ".card { /* color used to softly clip top and bottom of the .words container */ --bg-color: #111; background-color: var(--bg-color); padding: 1rem 2rem; border-radius: 1.25rem; } .loader { color: rgb(124, 124, 124); font-family: \"Poppins\", sans-serif; font-weight: 500; font-size: 25px; -webkit-box-sizing: content-box; box-sizing: content-box; height: 40px; padding: 10px 10px; display: -webkit-box; display: -ms-flexbox; display: flex; border-radius: 8px; } .words { overflow: hidden; position: relative; } .words::after { content: \"\"; position: absolute; inset: 0; background: linear-gradient( var(--bg-color) 10%, transparent 30%, transparent 70%, var(--bg-color) 90% ); z-index: 20; } .word { display: block; height: 100%; padding-left: 6px; color: #956afa; animation: spin_4991 4s infinite; } @keyframes spin_4991 { 10% { -webkit-transform: translateY(-102%); transform: translateY(-102%); } 25% { -webkit-transform: translateY(-100%); transform: translateY(-100%); } 35% { -webkit-transform: translateY(-202%); transform: translateY(-202%); } 50% { -webkit-transform: translateY(-200%); transform: translateY(-200%); } 60% { -webkit-transform: translateY(-302%); transform: translateY(-302%); } 75% { -webkit-transform: translateY(-300%); transform: translateY(-300%); } 85% { -webkit-transform: translateY(-402%); transform: translateY(-402%); } 100% { -webkit-transform: translateY(-400%); transform: translateY(-400%); } }"
+      - generic [ref=f369e78]:
+        - button "Save to favorites" [ref=f369e80] [cursor=pointer]
+        - generic [ref=f369e87]:
+          - button "Export" [ref=f369e88] [cursor=pointer]
+          - button "React" [ref=f369e94] [cursor=pointer]
+      - generic [ref=f369e98]:
+        - generic [ref=f369e99]:
+          - generic [ref=f369e101]:
+            - generic [ref=f369e102]:
+              - heading "Comments" [level=3] [ref=f369e103]
+              - paragraph [ref=f369e104]:
+                - link "Log in" [ref=f369e105] [cursor=pointer]:
+                  - /url: /kennyotsu/fresh-lizard-20?create-account
+                - text: to add comments
+            - generic [ref=f369e107]:
+              - textbox "Send a first comment..." [disabled] [ref=f369e108]
+              - generic [ref=f369e109]:
+                - button "Send" [disabled]
+                - paragraph: 0/244
+          - link "No variations yet, create one!" [ref=f369e112] [cursor=pointer]:
+            - /url: /kennyotsu/fresh-lizard-20?create-account
+        - complementary [ref=f369e116]:
+          - generic [ref=f369e117]:
+            - heading "loader" [level=2] [ref=f369e118]
+            - generic [ref=f369e119]:
+              - link "simple" [ref=f369e120] [cursor=pointer]:
+                - /url: /tags/simple
+              - link "dark" [ref=f369e121] [cursor=pointer]:
+                - /url: /tags/dark
+              - link "animated" [ref=f369e122] [cursor=pointer]:
+                - /url: /tags/animated
+              - link "loader" [ref=f369e123] [cursor=pointer]:
+                - /url: /tags/loader
+              - link "text" [ref=f369e124] [cursor=pointer]:
+                - /url: /tags/text
+              - link "gray" [ref=f369e125] [cursor=pointer]:
+                - /url: /tags/gray
+              - link "purple" [ref=f369e126] [cursor=pointer]:
+                - /url: /tags/purple
+              - link "loading" [ref=f369e127] [cursor=pointer]:
+                - /url: /tags/loading
+              - link "switches" [ref=f369e128] [cursor=pointer]:
+                - /url: /tags/switches
+            - generic [ref=f369e129]:
+              - generic [ref=f369e130]: Feb 26, 2023
+              - button "Report" [ref=f369e133] [cursor=pointer]
+          - generic [ref=f369e139]:
+            - link [ref=f369e140] [cursor=pointer]:
+              - /url: /profile/kennyotsu
+              - img "kennyotsu" [ref=f369e142]
+            - generic [ref=f369e143]:
+              - link "kennyotsu" [ref=f369e144] [cursor=pointer]:
+                - /url: /profile/kennyotsu
+              - paragraph [ref=f369e145]: kotsu
+            - paragraph [ref=f369e146]: I do web thingies.
+        - generic [ref=f369e150]:
+          - generic [ref=f369e151]: MIT License
+          - textbox [ref=f369e155]: "Copyright - 2026 kennyotsu (kotsu) Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    - contentinfo "Site Footer" [ref=f369e156]:
+      - generic [ref=f369e157]:
+        - generic [ref=f369e158]:
+          - generic [ref=f369e159]:
+            - paragraph [ref=f369e161]: Uiverse | The universe of UI
+            - generic [ref=f369e162]:
+              - paragraph [ref=f369e163]: MIT License
+              - paragraph [ref=f369e166]:
+                - text: All content (UI elements) on this site are published under the
+                - link "MIT License" [ref=f369e167] [cursor=pointer]:
+                  - /url: https://opensource.org/license/mit
+                - text: .
+            - list [ref=f369e168]:
+              - listitem [ref=f369e169]:
+                - link "Instagram" [ref=f369e170] [cursor=pointer]:
+                  - /url: https://www.instagram.com/uiverse.io/
+              - listitem [ref=f369e174]:
+                - link "Twitter" [ref=f369e175] [cursor=pointer]:
+                  - /url: https://twitter.com/uiverse_io
+              - listitem [ref=f369e179]:
+                - link "Discord" [ref=f369e180] [cursor=pointer]:
+                  - /url: https://discord.gg/KD8ba2uUpT
+          - generic [ref=f369e184]:
+            - generic [ref=f369e185]:
+              - paragraph [ref=f369e186]: Games
+              - navigation "Footer Navigation - Legal" [ref=f369e187]:
+                - list [ref=f369e188]:
+                  - listitem [ref=f369e189]:
+                    - link "Azeron.ai" [ref=f369e190] [cursor=pointer]:
+                      - /url: https://azeron.ai
+                  - listitem [ref=f369e191]:
+                    - link "Tavernia.io" [ref=f369e192] [cursor=pointer]:
+                      - /url: https://tavernia.io
+            - generic [ref=f369e193]:
+              - paragraph [ref=f369e194]: Resources
+              - navigation "Footer Navigation - Legal" [ref=f369e195]:
+                - list [ref=f369e196]:
+                  - listitem [ref=f369e197]:
+                    - link "Design Systems" [ref=f369e198] [cursor=pointer]:
+                      - /url: https://uiverse.io/design
+                  - listitem [ref=f369e199]:
+                    - link "Cssbuttons.io" [ref=f369e200] [cursor=pointer]:
+                      - /url: https://cssbuttons.io
+                  - listitem [ref=f369e201]:
+                    - link "Neumorphism.io" [ref=f369e202] [cursor=pointer]:
+                      - /url: https://neumorphism.io
+                  - listitem [ref=f369e203]:
+                    - link "Browsergames.gg" [ref=f369e204] [cursor=pointer]:
+                      - /url: https://browsergames.gg
+            - generic [ref=f369e205]:
+              - paragraph [ref=f369e206]: Information
+              - navigation "Footer Navigation - Legal" [ref=f369e207]:
+                - list [ref=f369e208]:
+                  - listitem [ref=f369e209]:
+                    - link "Blog" [ref=f369e210] [cursor=pointer]:
+                      - /url: /blog
+                  - listitem [ref=f369e211]:
+                    - link "Post Guidelines" [ref=f369e212] [cursor=pointer]:
+                      - /url: /guidelines
+                  - listitem [ref=f369e213]:
+                    - link "Give feedback" [ref=f369e214] [cursor=pointer]:
+                      - /url: /feedback
+                  - listitem [ref=f369e215]:
+                    - link "Report bug" [ref=f369e216] [cursor=pointer]:
+                      - /url: /bug
+            - generic [ref=f369e217]:
+              - paragraph [ref=f369e218]: Legal
+              - navigation "Footer Navigation - Company" [ref=f369e219]:
+                - list [ref=f369e220]:
+                  - listitem [ref=f369e221]:
+                    - link "Terms and Conditions" [ref=f369e222] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/terms-of-service/bdc0e7cf-cb88-4f24-9cb5-13761e20dedb
+                  - listitem [ref=f369e223]:
+                    - link "Privacy policy" [ref=f369e224] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/privacy-policy/fe317b39-7972-4f85-b7c6-d4f562e429d4
+                  - listitem [ref=f369e225]:
+                    - link "Cookie policy" [ref=f369e226] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/cookie-policy/4e4bbc89-b80d-43d6-98bc-02ee075cc311
+                  - listitem [ref=f369e227]:
+                    - link "Disclaimer" [ref=f369e228] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/disclaimer/eabc96f8-640d-4858-aadc-c30f646265ed
+        - paragraph [ref=f369e229]: 2026 Pixel Galaxies. All rights reserved. - Uiverse.io

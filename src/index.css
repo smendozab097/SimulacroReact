@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Sobrescribir la fuente por defecto del sistema con 'Outfit' de Google Fonts */
+  --font-sans: "Outfit", sans-serif;
+}
